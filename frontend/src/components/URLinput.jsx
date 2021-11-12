@@ -21,18 +21,12 @@ const URLinput = () => {
 
 	return (
 		<form onSubmit={handleSubmit(onSubmit)}>
-			<Box sx={{ border: "1.5px solid #e0e0e0", borderRadius: "5px" }}>
+			<Box sx={{ marginY: "15px" }}>
 				{/* <input defaultValue="test" {...register("example")} /> */}
-				<Typography variant="h3">Website Accessibility Tester</Typography>
-				<Grid
-					container
-					justifyContent="center"
-					// alignItems="center"
-					textAlign="center"
-					// rowSpacing={3}
-					spacing={2}
-					mt={3}
-				>
+				<Typography variant="h3" sx={{ paddingBottom: "15px" }} color="primary">
+					Website Accessibility Tester
+				</Typography>
+				<Grid container justifyContent="center" textAlign="center" spacing={2}>
 					<Grid item xs={10} md={9}>
 						<Controller
 							name="url"
